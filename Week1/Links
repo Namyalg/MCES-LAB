@@ -3,3 +3,33 @@ Control panel : https://www.tinkercad.com/things/c7odUqe2Y0Y-tremendous-maimu-vi
 Switch and LED : https://www.tinkercad.com/things/ey2yFOBvffX-epic-fyyran-vihelmo/editel?tenant=circuits
 
 Traffic Light : https://www.tinkercad.com/things/6ETHBKEMN8g-amazing-hango-curcan/editel?tenant=circuits
+
+Some general notes :
+
+pinMode( ) to set whether input or output -> for devices like switch/button where u need to read the state of it, give it as input
+                                           -> for devices like motor, led, sensors, etc you need to give it as output
+                                           
+                                           
+digitalRead() and digitalWrite() -> digital stands for either 0 or 1, i.e low or high
+
+digitalRead(of a pin) gives either high or low
+
+digitalWrite(of a pin, high or low) can be used to set the high or low values
+
+eg -> led, needs high to glow, low to stop
+
+analogRead(of a pin) and analogWrite(pin, value)
+
+for analogRead() -> a value between 0 to 1023 will be read, it can be converted to a corresponding value out of 5 volts
+- The value of sensors etc are read, so it needs input configuration
+
+
+for analogWrite() -> use the pwm pins to generate an analog output given by the analogWrite() pins 3,5,6,9,11
+
+duty cycle -> ontime / (ontime / offtime) -> that is how the digital is converted to analog outputs
+
+this is used to drive motors, change the intensity of bulbs, or the multicolored LED
+
+
+
+
