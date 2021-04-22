@@ -8,6 +8,8 @@
 #the middle pin gives humidity and temperature, to get the temperatur and the humidity
 #it is a single sensor, but can do both the functions
 
+#capacitor with a substrate is used --> mechanism
+
 #capacity humidty sensor, calculate humidity based on resistance difference between its electordes
 #has a thermistor inside, this is for temperature
 
