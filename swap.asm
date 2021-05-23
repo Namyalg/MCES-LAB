@@ -1,0 +1,16 @@
+A	EQU 4
+B	EQU 10
+	;swap routine
+	AREA RESET, CODE
+	ENTRY
+	MOV R0, #A
+	MOV R1, #B
+	BL SWAP
+	
+SWAP
+	MOV R2, R0
+	MOV R0, R1
+	MOV R1, R2
+	
+STOP B STOP
+	END
